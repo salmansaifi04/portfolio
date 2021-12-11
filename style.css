@@ -1,7 +1,5 @@
 .box {
     background: #0a212f;
-    font-family: 'Source Sans Pro', sans-serif;.box {
-    background: #0a212f;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     overflow: hidden;
@@ -276,90 +274,3 @@
 
 
 /* about section end */
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.box img {
-    width: 100%;
-    height: auto;
-    transition: all .5s ease 0.1s;
-}
-
-.box:hover img {
-    opacity: 0.25;
-    filter: blur(3px);
-    transform: scale(1.1);
-}
-
-.box .box-content {
-    width: 100%;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.box .box-content:before {
-    content: "";
-    height: 5px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid#fff;
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateY(-50%);
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    right: 50%;
-    transition: all 0.4s;
-}
-
-.box:hover .box-content:before {
-    opacity: 0.6;
-    left: 50px;
-    right: 50px;
-}
-
-.box .title {
-    color: #fff;
-    font-size: 27px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0 0 20px;
-    opacity: 0;
-    transition: all 0.5s linear 0.2s;
-}
-
-.box .post {
-    color: #5dff00;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: block;
-    opacity: 0;
-    transition: all 0.5s linear 0.2s;
-}
-
-.box:hover .title,
-.box:hover .post {
-    text-shadow: 0 0 0 rgba(255, 255, 255, 0);
-    opacity: 1;
-}
-
-@media only screen and (max-width:990px) {
-    .box {
-        margin: 0 0 30px;
-    }
-}
-
-.container-fluid {
-    background-color: whitesmoke;
-}
-
-.container-fluid .typed-cursor {
-    font-size: 35px;
-    font-weight: bolder;
-}
